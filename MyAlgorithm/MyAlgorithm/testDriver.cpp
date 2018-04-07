@@ -1,42 +1,37 @@
 #include <iostream>
-#include <algorithm>
 #include <vector>
 using namespace std;
 
-#define NSIZE 1000
-
-void dfs(int start, vector<int> graph[], bool* checkArr){
-	checkArr[start] = true;
-	cout << start << ' ';
-	for (int i = 0; i <= (int)graph[start].size(); i++){
-		int next = graph[start][i];
-		if (!checkArr[next])
-			dfs(next, graph, checkArr);
+void dfs(int start, vector<int> *graph, bool *check,int& cnt){
+	if (check[start]){//이미 방문했던곳이라면 리턴
+		return;
 	}
-
+	check[start] = true;
+	int next = graph[start][0]; // 다음 방문장소 지정
+	if (!check[next])
+		dfs(next, graph, check, cnt);
+	else
+		cnt++;// 다음방문장소가 체크되어있다면 카운트++
 }
 
-void main(){
-	int nodeNum, edgeNum, start;
-	cin >> nodeNum >> edgeNum >> start;
+int main(){
+	int testNum, nodeNum;
+	cin >> testNum;
 
-	bool *checkArr = new bool[nodeNum + 1];
-	fill(checkArr, checkArr + nodeNum + 1, false);
-	vector<int> *graphList = new vector<int>[nodeNum + 1];
-	for (int i = 0; i < edgeNum; i++){
-		int startN, endN;
-		cin >> startN >> endN;
-		graphList[startN].push_back(endN);
+	while (testNum > 0){
+		cin >> nodeNum;   
+		bool *checkArr = new bool[nodeNum + 1];
+		fill(checkArr, checkArr + nodeNum + 1, false);
+		vector<int> *graphList = new vector<int>[nodeNum+1];
+		for (int i = 1; i <= nodeNum; i++){
+			int tmp;
+			cin >> tmp;
+			graphList[i].push_back(tmp);
+		}
+		int cnt = 0; 
+		for (int i = 1; i <= nodeNum; i++)
+			dfs(i, graphList, checkArr, cnt);
+		cout << cnt << endl;
+		testNum--;
 	}
-	for (int i = 1; i <= nodeNum; i++)
-		sort(graphList[i].begin(), graphList[i].end());
-	/*for (int i = 1; i < nodeNum; i++){
-	cout << i << ":";
-	for (int j = 0; j < (int)graphList[i].size(); j++){
-	cout<<graphList[i][j] << ' ';
-	}
-	cout << endl;
-	}*/
-	dfs(start, graphList, checkArr);
-
 }

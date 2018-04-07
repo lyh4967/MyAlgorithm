@@ -13,14 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="graph">
+      <UniqueIdentifier>{c6bbd774-50e7-40a5-806d-ad8ade73b415}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dfs">
+      <UniqueIdentifier>{3373ca6d-922c-4c9e-9825-2e393cd23f33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bfs">
+      <UniqueIdentifier>{477693cb-1dfc-4eff-a369-bcbc54349c32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="DFS.cpp">
+      <Filter>dfs</Filter>
+    </Text>
+    <Text Include="Graph.cpp">
+      <Filter>graph</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="testDriver.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="DFS.txt" />
-    <Text Include="Graph.txt" />
+    <ClCompile Include="BFS.cpp">
+      <Filter>bfs</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
