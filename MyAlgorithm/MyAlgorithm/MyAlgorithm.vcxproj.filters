@@ -38,5 +38,11 @@
     <ClCompile Include="BFS.cpp">
       <Filter>bfs</Filter>
     </ClCompile>
+    <ClCompile Include="[10451]permutation_cycle.cpp">
+      <Filter>dfs</Filter>
+    </ClCompile>
+    <ClCompile Include="[2667]houseNumbering.cpp">
+      <Filter>dfs</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

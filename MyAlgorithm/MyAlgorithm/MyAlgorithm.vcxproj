@@ -78,12 +78,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="DFS.cpp" />
-    <Text Include="Graph.cpp" />
+    <Text Include="DFS.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Text>
+    <Text Include="Graph.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BFS.cpp" />
+    <ClCompile Include="BFS.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="[10451]permutation_cycle.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="testDriver.cpp" />
+    <ClCompile Include="[2667]houseNumbering.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
