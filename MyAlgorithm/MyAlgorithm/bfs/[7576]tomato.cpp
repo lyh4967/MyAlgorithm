@@ -9,7 +9,7 @@ int cnt = 0;
 int direction[4][2] = { { 0, 1 }, { 0, -1 }, { 1, 0 }, { -1, 0 } };
 
 bool BoundTest(int i, int j){
-	return (0 <= i && i < N) && ( 0 <= j && j < M);
+	return (0 <= i && i < N) && (0 <= j && j < M);
 }
 
 void bfs(int** graph, int** check){
@@ -31,14 +31,14 @@ void bfs(int** graph, int** check){
 			if (BoundTest(nextX, nextY) && (graph[nextX][nextY] == 0) && (check[nextX][nextY] == -1)){
 				graph[nextX][nextY] = 1;
 				q.push(make_pair(nextX, nextY));
-				check[nextX][nextY] = check[tmp.first][tmp.second]+1;
+				check[nextX][nextY] = check[tmp.first][tmp.second] + 1;
 			}
 		}
 	}
 }
 
 int main(){
-	
+
 	cin >> M >> N;//M:가로, N:세로
 	int** graphArr = new int*[N];
 	int** checkArr = new int*[N];
@@ -48,14 +48,14 @@ int main(){
 	for (int i = 0; i < N; i++)
 		checkArr[i] = new int[M];
 
-	for (int i = 0; i < N;i++)//그래프 생성
+	for (int i = 0; i < N; i++)//그래프 생성
 	for (int j = 0; j < M; j++)
 		cin >> graphArr[i][j];
 	for (int i = 0; i < N; i++)//방문록 생성
 	for (int j = 0; j < M; j++)
 		checkArr[i][j] = -1;
 
-	bfs(graphArr,checkArr);
+	bfs(graphArr, checkArr);
 	for (int i = 0; i < N; i++){
 		for (int j = 0; j < M; j++){
 			if (graphArr[i][j] == 0){
@@ -64,7 +64,7 @@ int main(){
 			}
 		}
 	}
-	int maxDays = -1; 
+	int maxDays = -1;
 	for (int i = 0; i < N; i++){//checkArr에 있는 요소들중 가장 큰값을 출력한다.
 		for (int j = 0; j < M; j++){
 			if (checkArr[i][j] >maxDays){
@@ -73,6 +73,6 @@ int main(){
 		}
 	}
 	cout << maxDays << endl;
-	
+
 	return 0;
 }

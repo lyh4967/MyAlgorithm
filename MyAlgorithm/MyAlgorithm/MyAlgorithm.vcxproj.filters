@@ -24,25 +24,26 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="DFS.cpp">
-      <Filter>dfs</Filter>
-    </Text>
-    <Text Include="Graph.cpp">
-      <Filter>graph</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="testDriver.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BFS.cpp">
+    <ClCompile Include="bfs\BFS.cpp">
       <Filter>bfs</Filter>
     </ClCompile>
-    <ClCompile Include="[10451]permutation_cycle.cpp">
+    <ClCompile Include="dfs\[2667]houseNumbering.cpp">
       <Filter>dfs</Filter>
     </ClCompile>
-    <ClCompile Include="[2667]houseNumbering.cpp">
+    <ClCompile Include="dfs\[10451]permutation_cycle.cpp">
       <Filter>dfs</Filter>
+    </ClCompile>
+    <ClCompile Include="dfs\DFS.cpp">
+      <Filter>dfs</Filter>
+    </ClCompile>
+    <ClCompile Include="graph\Graph.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="bfs\[7576]tomato.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
