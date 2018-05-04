@@ -1,78 +1,66 @@
-#include<iostream>
-#include <algorithm>
-#include <queue>
+ï»¿#include <iostream>
+#include <vector>
+#include <stdio.h>
+#include <bitset>
+#include <cmath>
 using namespace std;
 
-int M, N;//M:°¡·Î, N:¼¼·Î
+int N, M;
 int cnt = 0;
+int* boxArr;
+int* T; //ìƒìì¶œë ¥
+int* data;//ìƒì
+double ifData; 
 
-int direction[4][2] = { { 0, 1 }, { 0, -1 }, { 1, 0 }, { -1, 0 } };
-
-bool BoundTest(int i, int j){
-	return (0 <= i && i < N) && ( 0 <= j && j < M);
-}
-
-void bfs(int** graph, int** check){
-	queue <pair<int, int>> q;
-	for (int i = 0; i < N; i++){//Ã³À½ ÀÍ¾îÀÖ´ø °úÀÏµéÀ» Å¥¿¡ ³Ö¾îÁØ´Ù.
-		for (int j = 0; j < M; j++){
-			if (graph[i][j] == 1){
-				q.push(make_pair(i, j));
-				check[i][j]++;
-			}
-		}
+void process(int q){
+	int result = 0;
+	for (int i = q - 1; i >= 0; i--){
+		result = result | boxArr[T[i]];
 	}
-	while (!q.empty()){
-		pair<int, int> tmp = q.front();
-		q.pop();
-		for (int i = 0; i < 4; i++){//Å¥¿¡ ÀÖ´Â¿ä¼ÒµéÀ» Â÷·Ê·Î ²¨³»¸ç ÀÍ´Âµ¥±îÁö °É¸®´Â³¯Â¥¸¦ Â÷·ÊÂ÷·ÊcheckArr¿¡ ÀÔ·ÂÇÑ´Ù.
-			int nextX = tmp.first + direction[i][0];
-			int nextY = tmp.second + direction[i][1];
-			if (BoundTest(nextX, nextY) && (graph[nextX][nextY] == 0) && (check[nextX][nextY] == -1)){
-				graph[nextX][nextY] = 1;
-				q.push(make_pair(nextX, nextY));
-				check[nextX][nextY] = check[tmp.first][tmp.second]+1;
-			}
-		}
+	if (result == (ifData - 1))
+		cnt++;
+}
+/*data[]ì—ì„œ ì•ì—ì„œë¶€í„° nê°œì˜ ìˆ«ì ì¤‘ rê°œë¥¼ ì„ íƒí•´ì„œ ì¡°í•©ì„ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜. qëŠ” ì¶œë ¥ ì‹œ ì¶œë ¥ ê°¯ìˆ˜ ì§€ì •*/
+void Comb(int n, int r, int q){
+	if (r == 0){
+		process(q);
+		return;
+	}
+	else if (n<r){
+		return;
+	}
+	else {  
+		T[r - 1] = data[n - 1];
+		Comb(n - 1, r - 1, q);  //n-1Cr-1: í˜„ì¬ ì•„ì´í…œì„ ì„ íƒí•œ ê²½ìš°
+		Comb(n - 1, r, q);    //n-1Cr: í˜„ì¬ ì•„ì´í…œì„ ì„ íƒí•˜ì§€ ì•Šì€ ê²½ìš°
 	}
 }
-
 int main(){
 	
-	cin >> M >> N;//M:°¡·Î, N:¼¼·Î
-	int** graphArr = new int*[N];
-	int** checkArr = new int*[N];
-	for (int i = 0; i < N; i++)
-		graphArr[i] = new int[M];
+	cin >> N >> M;
 
-	for (int i = 0; i < N; i++)
-		checkArr[i] = new int[M];
-
-	for (int i = 0; i < N;i++)//±×·¡ÇÁ »ı¼º
-	for (int j = 0; j < M; j++)
-		cin >> graphArr[i][j];
-	for (int i = 0; i < N; i++)//¹æ¹®·Ï »ı¼º
-	for (int j = 0; j < M; j++)
-		checkArr[i][j] = -1;
-
-	bfs(graphArr,checkArr);
+	boxArr = new int[N+1];
+	fill(boxArr, boxArr + N + 1, 0);
+	data = new int[N];
+	T = new int[N];
 	for (int i = 0; i < N; i++){
-		for (int j = 0; j < M; j++){
-			if (graphArr[i][j] == 0){
-				cout << -1 << endl;
-				return 0;
-			}
+		data[i] = i;
+	}
+	ifData = pow(2, M);
+	for (int i = 0; i < N; i++){
+		int K;
+		cin >> K;
+		for (int j = 0; j < K; j++){
+			int tmp;
+			cin >> tmp;
+			boxArr[i] = boxArr[i] | (1 << (tmp-1));
 		}
 	}
-	int maxDays = -1; 
-	for (int i = 0; i < N; i++){//checkArr¿¡ ÀÖ´Â ¿ä¼ÒµéÁß °¡Àå Å«°ªÀ» Ãâ·ÂÇÑ´Ù.
-		for (int j = 0; j < M; j++){
-			if (checkArr[i][j] >maxDays){
-				maxDays = checkArr[i][j];
-			}
-		}
+
+
+	for (int i = 1; i <= N; i++){
+		Comb(N, i, i);
 	}
-	cout << maxDays << endl;
-	
-	return 0;
+	cout << cnt%1000000007 << endl;
+
 }
