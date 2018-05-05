@@ -84,6 +84,12 @@
     <ClCompile Include="incomplete\[2803]MyToy.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="incomplete\[5620]minimum_distance.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dp\[2193]pinary_number.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
