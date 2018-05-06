@@ -18,8 +18,9 @@ void process(int q){
 		result = result | boxArr[T[i]];
 	}
 	if (result == (ifData - 1))
-		cnt++;
+		cnt = (cnt + 1) % 1000000007;
 }
+
 /*data[]에서 앞에서부터 n개의 숫자 중 r개를 선택해서 조합을 출력하는 함수. q는 출력 시 출력 갯수 지정*/
 void Comb(int n, int r, int q){
 	if (r == 0){
@@ -34,6 +35,10 @@ void Comb(int n, int r, int q){
 		Comb(n - 1, r - 1, q);  //n-1Cr-1: 현재 아이템을 선택한 경우
 		Comb(n - 1, r, q);    //n-1Cr: 현재 아이템을 선택하지 않은 경우
 	}
+}
+void iterator(int n, int r, int q){
+	Comb(n / 2, r / 2, q / 2);
+	Comp(n, r / 2 + 1, q / 2 + 1);
 }
 int main(){
 
@@ -58,9 +63,9 @@ int main(){
 	}
 
 
-	for (int i = 1; i <= N; i++){
-		Comb(N, i, i);
-	}
-	cout << cnt % 1000000007 << endl;
+	for (int i = 1; i <= N;i++)
+		iterator(N, i, i);
+	
+	cout << cnt<< endl;
 
 }

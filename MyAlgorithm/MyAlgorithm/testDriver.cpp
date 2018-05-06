@@ -1,21 +1,42 @@
 ﻿#include <iostream>
+#include <algorithm>
 using namespace std;
 
+struct Point{
+	int x;
+	int y;
+};
 
+Point* arrPoint;
+
+bool compareX(Point& a, Point& b){
+	return a.x < b.x;
+}
+
+bool checkEquation(int start, int end){
+	for (int i = start; i < end - 1; i++){
+		for (int j = i + 1; j < end; j++){
+
+		}
+	}
+}
+
+bool checkPoint(int start, int end){
+
+
+}
 
 int main(){
 
-	long long N;
-	cin >> N;
-	long long dp[91][2];
+	int n, p;
+	cin >> n;
+	cin >> p;
+	arrPoint = new Point[n];
+	for (int i = 0; i < n; i++)
+		cin >> arrPoint[i].x >> arrPoint[i].y;
 
-	dp[1][0] = 0;
-	dp[1][1] = 1;
-	for (int i = 2; i <= N; i++){
-		dp[i][0] = dp[i - 1][1] + dp[i - 1][0];
-		dp[i][1] = dp[i - 1][0];
-	}
-	cout << dp[N][0] + dp[N][1] << endl;
-	return 0;
+	sort(arrPoint, arrPoint + n, compareX);
+
+
 
 }
