@@ -96,6 +96,18 @@
     <ClCompile Include="dp\[1912]sequential_sum.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="greedy\[11399]ATM.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="greedy\[5585]changeNum.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="greedy\[2437]scale.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="greedy\[1543]document_search.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">

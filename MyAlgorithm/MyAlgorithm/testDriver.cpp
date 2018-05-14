@@ -1,31 +1,24 @@
 ﻿#include <iostream>
-#include <algorithm>
+#include <string>
 using namespace std;
 
-int main(){
 
-	int n;
-	cin >> n;
-	int *arr = new int[n];
-	
-	for (int i = 0; i < n; i++)
-		cin >> arr[i];
 
-	int* dp = new int[n];
-	fill(dp, dp + n, 0);
-	dp[0] = arr[0];
-	for (int i = 1; i < n; i++){
-		dp[i] = max(dp[i - 1] + arr[i], arr[i]);
+int main() {
+
+	string document,word;
+	getline(cin,document);
+	getline(cin,word);
+	int index = 0;
+	int cnt = 0;
+	while (document.find(word,index) <= 2500) {
+		cnt++;
+		index = document.find(word, index)+word.size();
 	}
+	cout << cnt << endl;
+
+
 	
-
-	int max = dp[0];
-	for (int i = 1; i < n; i++){
-		if (max < dp[i])
-			max = dp[i];
-	}
-	cout << max << endl;
-
 	return 0;
 
 }
