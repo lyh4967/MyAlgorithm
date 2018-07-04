@@ -108,6 +108,9 @@
     <ClCompile Include="greedy\[1543]document_search.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="test_c.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
