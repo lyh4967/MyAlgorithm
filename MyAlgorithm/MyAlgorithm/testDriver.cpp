@@ -1,46 +1,43 @@
 ﻿#include <iostream>
-#include <string>
-#include <algorithm>
 using namespace std;
 
 int main() {
 
-	string s1;
-	string s2;
+	int testNum;
+	cin >> testNum;
+	for (int test = 1; test <= testNum; test++) {
 
-	cin >> s1;
-	cin >> s2;
-
-	int** dp = new int* [s2.size()+1];
-	for (int i = 0; i <= s2.size(); i++)
-		dp[i] = new int[s1.size()+1];
-
-
-	for (int i = 0; i <= s2.size(); i++) {
-		for (int j = 0; j <= s1.size(); j++) {
-			dp[i][j] = 0;
-		}
-	}
-	for (int i = 1; i <= s2.size(); i++) {
-		for (int j = 1; j <= s1.size(); j++) {
-			if (s2[i-1] == s1[j-1]) {
-				dp[i][j] = dp[i - 1][j - 1] + 1;
+		int n;
+		cin >> n;
+		int arr[401];
+		fill(arr, arr + 401, 0);
+		for (int i = 0; i < n; i++) {
+			int from, to;
+			cin >> from >> to;
+			if (from > to) {
+				int temp = from;
+				from = to;
+				to = temp;
 			}
-			else {
-				dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+			for (int j = from; j <= to; j++) {
+				arr[j] += 1;
+			}
+			if (from % 2 == 0) {
+				arr[from - 1] += 1;
+			}
+			if (to % 2 == 1) {
+				arr[to + 1] += 1;
 			}
 		}
+		int max = 0;
+		for (int i = 1; i <= 400; i++) {
+			if (max < arr[i])
+				max = arr[i];
+		}
+		cout << "#" << test << ' ' << max << endl;
+
 	}
 
-	/*
-	for (int i = 0; i <= s2.size(); i++) {
-		for (int j = 0; j <= s1.size(); j++) {
-			cout << dp[i][j] << ' ';
-		}
-		cout << endl;
-	}
-	*/
-	cout << dp[s2.size()][s1.size()] << endl;
 	return 0;
 
 }
