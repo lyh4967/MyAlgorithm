@@ -150,10 +150,16 @@
     <ClCompile Include="SWExpert\[4615]oselloGame.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="SWExpert\incomplete\connectProcessor.cpp">
+    <ClCompile Include="SWExpert\[4751]diamond.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="SWExpert\[4751]diamond.cpp">
+    <ClCompile Include="SWExpert\connectProcessor.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWExpert\incomplete\[4740]mingee.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="incomplete\[9177]mixWord.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -166,5 +172,8 @@
     <ResourceCompile Include="MyAlgorithm.rc">
       <Filter>리소스 파일</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt" />
   </ItemGroup>
 </Project>
