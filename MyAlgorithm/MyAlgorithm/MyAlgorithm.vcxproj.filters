@@ -162,6 +162,12 @@
     <ClCompile Include="incomplete\[9177]mixWord.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="bfs\[1194]filledMoon.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="samsungSW\dragoncurve.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -175,5 +181,6 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
+    <Text Include="bfs\[1194].txt" />
   </ItemGroup>
 </Project>
