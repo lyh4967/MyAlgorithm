@@ -120,12 +120,6 @@
     <ClCompile Include="dp\[1890]Jump.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="incomplete\[1965]InputBox.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="incomplete\[9251]LCS.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="SWExpert\1206.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -169,6 +163,15 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="dp\[1010]putBridge.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dp\[1965]InputBox.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dp\[9251]LCS.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWExpert\incomplete\[1859]millionDollarBaby.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
