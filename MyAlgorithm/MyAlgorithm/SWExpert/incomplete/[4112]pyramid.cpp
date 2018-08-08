@@ -92,4 +92,4 @@ int main() {
 		cout << "#" << test << " " << minCnt << endl;
 	}
 	return 0;
-}s
+}

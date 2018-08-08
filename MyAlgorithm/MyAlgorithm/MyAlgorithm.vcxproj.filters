@@ -192,6 +192,15 @@
     <ClCompile Include="SWExpert\incomplete\[4112]pyramid.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="incomplete\[15938]avoidHeat.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stringPro\[9935]BoomString.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWExpert\[5020]DDoongdragon.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
