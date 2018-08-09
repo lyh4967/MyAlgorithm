@@ -38,24 +38,16 @@ int main() {
 
 
 		for (int i = 1; i <= 141; i++) {
-			if (a == 1 || b == 1) {
-				if (a == 1) {
-					startA = 1; startB = 1;
-				}
-				if (b == 1) {
-					endA = 1; endB = 1;
-				}
+
+			if (arr[i] <= a && a <= arr[i] + i - 1) {
+				startA = i;
+				startB = a - arr[i] + 1;
 			}
-			else {
-				if (arr[i] <= a && a <= arr[i] + i - 1) {
-					startA = i;
-					startB = a - arr[i] + 1;
-				}
-				if (arr[i] <= b && b <= arr[i] + i - 1) {
-					endA = i;
-					endB = b - arr[i] + 1;
-				}
+			if (arr[i] <= b && b <= arr[i] + i - 1) {
+				endA = i;
+				endB = b - arr[i] + 1;
 			}
+
 		}
 		queue<Pair> que;
 		Pair node(startA, startB, 0);

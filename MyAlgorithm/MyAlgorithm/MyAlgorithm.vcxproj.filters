@@ -189,9 +189,6 @@
     <ClCompile Include="SWExpert\incomplete\[4804]programmingOfUiseok.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="SWExpert\incomplete\[4112]pyramid.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="incomplete\[15938]avoidHeat.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -205,6 +202,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="samsungSW\[15686]chickenDelivery.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWExpert\[4112]pyramid.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
