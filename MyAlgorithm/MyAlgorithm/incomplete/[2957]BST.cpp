@@ -40,7 +40,7 @@ void insert(int x, Node* n) {
 }
 
 int main() {
-
+	ios_base::sync_with_stdio(false); cin.tie(NULL);
 	int n; cin >> n;
 	Node* root = new Node;
 	for (int i = 0; i < n; i++) {

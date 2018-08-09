@@ -207,6 +207,12 @@
     <ClCompile Include="SWExpert\[4112]pyramid.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="incomplete\[12100]2048.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stack\[9012]parenthesis.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
