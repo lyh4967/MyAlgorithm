@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <string>
 #include <vector>
 using namespace std;
@@ -7,7 +7,7 @@ int n, k;
 string strArr[50];
 vector<char> candi;
 int candiSize = 0;
-bool chk[26]; //알파벳 체크
+bool chk[26]; //���ĺ� üũ
 char baseAl[5] = { 'a','n','t','i','c' };
 int answer = 0;
 
@@ -19,8 +19,8 @@ void print() {
 }
 
 void dfs(int index, int cnt) {
-	
-	if (cnt == k - 5 || cnt==candiSize) {
+
+	if (cnt == k - 5 || cnt == candiSize) {
 		int result = 0;
 		for (int i = 0; i < n; i++) {
 			int length = strArr[i].size();
@@ -52,7 +52,7 @@ int main() {
 	fill(chk, chk + 26, false);
 	cin >> n >> k;
 	for (int i = 0; i < 5; i++) {
-		chk[baseAl[i]-'a'] = true;
+		chk[baseAl[i] - 'a'] = true;
 	}
 
 	bool tempCharArr[26];
@@ -71,12 +71,12 @@ int main() {
 			candi.push_back(i + 'a');
 	}
 	candiSize = candi.size();
-	
+
 	if (k >= 5) {
 		dfs(0, 0);
 	}
 	cout << answer << endl;
-	
+
 
 	return 0;
 }

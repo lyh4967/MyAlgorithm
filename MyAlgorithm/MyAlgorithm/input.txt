@@ -1,5 +1,11 @@
-D4 D7 4
-T
-T
-T
-RT
+5 10
+antadeogtica
+antabrotica
+antawogtica
+antaefzbtica
+antabtica
+
+3 10
+antawwtica
+antabtica
+antatica
