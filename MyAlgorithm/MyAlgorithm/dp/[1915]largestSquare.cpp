@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <algorithm>
 #include <string>
 using namespace std;
@@ -25,7 +25,7 @@ int main() {
 	for (int i = 0; i < n; i++) {
 		string str; cin >> str;
 		for (int j = 1; j <= m; j++) {
-			int num = str[j-1] - '0';
+			int num = str[j - 1] - '0';
 			if (num == 1) {
 				dp[1][j] = min_t(dp[0][j - 1], dp[0][j], dp[1][j - 1]) + 1;
 				if (dp[1][j] > answer)
@@ -34,13 +34,13 @@ int main() {
 			else
 				dp[1][j] = 0;
 		}
-		
+
 		for (int j = 1; j <= m; j++) {
 			dp[0][j] = dp[1][j];
 		}
-		
+
 	}
-	cout << answer*answer << endl;
+	cout << answer * answer << endl;
 
 	return 0;
 }

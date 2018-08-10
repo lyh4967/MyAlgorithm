@@ -1,11 +1,19 @@
-5 10
-antadeogtica
-antabrotica
-antawogtica
-antaefzbtica
-antabtica
+5 6
+010011
+011111
+011110
+011110
+111111
 
-3 10
-antawwtica
-antabtica
-antatica
+5 6
+010011
+011111
+011101
+011110
+000110
+
+4 4
+1111
+1111
+1111
+1111

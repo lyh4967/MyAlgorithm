@@ -80,3 +80,16 @@ int main() {
 
 	return 0;
 }
+/*
+5 10
+antadeogtica
+antabrotica
+antawogtica
+antaefzbtica
+antabtica
+
+3 10
+antawwtica
+antabtica
+antatica
+*/
