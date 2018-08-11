@@ -1,46 +1,87 @@
 ﻿#include <iostream>
-#include <algorithm>
-#include <string>
+#include <stdio.h>
+#pragma warning(disable:4996)
 using namespace std;
-int min_t(int a, int b, int c) {
-	int result = a;
-	if (result > b)
-		result = b;
-	if (result > c)
-		result = c;
-	return result;
+void swap(int& a, int& b) {
+	int temp = a;
+	a = b;
+	b = temp;
 }
+void merge(int arr[], int left, int mid, int right) {
+	int i = left;
+	int j = mid + 1;
+	int k = left;
+	int tmp_arr[1000000];
+	while (i <= mid && j <= right) {
+		if (arr[i] <= arr[j]) {
+			tmp_arr[k] = arr[i];
+			i++;
+		}
+		else {
+			tmp_arr[k] = arr[j];
+			j++;
+		}
+		k++;
+	}
+
+	if (i > mid) {
+		for (int m = j; m <= right; m++) {
+			tmp_arr[k] = arr[m];
+			k++;
+		}
+	}
+	else {
+		for (int m = i; m <= mid; m++) {
+			tmp_arr[k] = arr[m];
+			k++;
+		}
+	}
+	for (int m = left; m <= right; m++)
+		arr[m] = tmp_arr[m];
+}
+void mergeSort(int*arr, int left, int right) {
+	if (left < right) {
+		int mid = (left + right) / 2;
+		mergeSort(arr, left, mid);
+		mergeSort(arr, mid+1, right);
+		merge(arr, left, mid, right);
+	}
+}
+void quickSort(int* arr,int left,int right) {
+	int keyIndex = left;
+	int endIndex = right;
+	int key = arr[left];
+	right = right + 1;
+	if (left < right) {
+		do {
+			do {
+				left++;
+			} while (arr[left] < key);
+			do {
+				right--;
+			} while (arr[right] > key);
+			if (left < right) {
+				swap(arr[left], arr[right]);
+			} 
+		} while (left < right);
+		swap(arr[right], arr[keyIndex]);
+		quickSort(arr, keyIndex,right - 1);
+		quickSort(arr, right + 1, endIndex);
+	}
+}
+
 int main() {
-	ios_base::sync_with_stdio(false); cin.tie(NULL);
-	int n, m;
-	cin >> n >> m;
-	int dp[3][1001];
-	int answer = 0;
 
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j <= m; j++) {
-			dp[i][j] = 0;
-		}
-	}
+	int n; scanf("%d", &n);
+	int arr[1000000];
+
 	for (int i = 0; i < n; i++) {
-		string str; cin >> str;
-		for (int j = 1; j <= m; j++) {
-			int num = str[j-1] - '0';
-			if (num == 1) {
-				dp[1][j] = min_t(dp[0][j - 1], dp[0][j], dp[1][j - 1]) + 1;
-				if (dp[1][j] > answer)
-					answer = dp[1][j];
-			}
-			else
-				dp[1][j] = 0;
-		}
-		
-		for (int j = 1; j <= m; j++) {
-			dp[0][j] = dp[1][j];
-		}
-		
+		scanf("%d",&arr[i]);
 	}
-	cout << answer*answer << endl;
-
+	mergeSort(arr, 0, n-1);
+	for (int i = 0; i < n; i++) {
+		 printf("%d\n",arr[i]);
+	}
 	return 0;
+
 }
