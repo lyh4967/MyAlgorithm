@@ -222,7 +222,16 @@
     <ClCompile Include="dp\[1915]largestSquare.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="incomplete\[2751]sort2.cpp">
+    <ClCompile Include="sort\[2751]sort2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="incomplete\[2169]controlRobot.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="dp\[144925]buildfarm.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Algospot\BOGGLE.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
