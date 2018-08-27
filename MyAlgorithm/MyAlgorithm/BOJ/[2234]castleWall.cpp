@@ -1,11 +1,11 @@
-ï»¿#include<iostream>
+#include<iostream>
 #include <queue>
 using namespace std;
 int map[50][50];
 int visited[50][50];
 int roomNum = 0;
 int maxSize = 0;
-int dir[4][2] = { {0,-1},{-1,0},{0,1},{1,0} };
+int dir[4][2] = { { 0,-1 },{ -1,0 },{ 0,1 },{ 1,0 } };
 int n, m;
 int pro3 = 0;
 bool isRanged(int a, int b) {
@@ -43,11 +43,11 @@ int main() {
 		for (int j = 0; j < n; j++) {
 
 			if (visited[i][j] == -1) {
-				roomNum++;//ë°©ê°¯ìˆ˜ ì¦ê°€
+				roomNum++;//¹æ°¹¼ö Áõ°¡
 				node.a = i; node.b = j;
 				que.push(node);
-				int roomSize = 0; //ë°©í¬ê¸°
-				int pro3_re = 0; //3ë²ˆë¬¸í•­ í›„ë³´
+				int roomSize = 0; //¹æÅ©±â
+				int pro3_re = 0; //3¹ø¹®Ç× ÈÄº¸
 				while (!que.empty()) {
 					node = que.front(); que.pop();
 					int a = node.a; int b = node.b;
@@ -55,10 +55,10 @@ int main() {
 					if (visited[a][b] != -1)
 						continue;
 					visited[a][b] = 0;
-					roomSize++;//ë°©í¬ê¸°ì¦ê°€
+					roomSize++;//¹æÅ©±âÁõ°¡
 					for (int k = 0; k < 4; k++) {
 						int bit = 1;
-						if (((bit << k) & map[a][b]) == 0) {//ë¹„ì–´ìžˆëŠ”ê³³ í™•ì¸
+						if (((bit << k) & map[a][b]) == 0) {//ºñ¾îÀÖ´Â°÷ È®ÀÎ
 							int nextA = a + dir[k][0];
 							int nextB = b + dir[k][1];
 							bool flag = true;
@@ -71,17 +71,17 @@ int main() {
 								tempBit = 0;
 							else
 								tempBit = 1;
-							if (((bit << tempBit) & map[nextA][nextB]) != 0)// ë‹¤ìŒ ì¹¸ì˜ ë²½ í™•ì¸
+							if (((bit << tempBit) & map[nextA][nextB]) != 0)// ´ÙÀ½ Ä­ÀÇ º® È®ÀÎ
 								flag = false;
-							if (isRanged(nextA,nextB) && flag && visited[nextA][nextB] == -1) {
+							if (isRanged(nextA, nextB) && flag && visited[nextA][nextB] == -1) {
 								node.a = nextA; node.b = nextB;
 								que.push(node);
 							}
 						}
-						else {//1ì¹¸ ëš«ì„ ì¤€ë¹„
+						else {//1Ä­ ¶ÕÀ» ÁØºñ
 							int nextA = a + dir[k][0];
 							int nextB = b + dir[k][1];
-							if (isRanged(nextA,nextB) && (visited[nextA][nextB] != -1) && (visited[nextA][nextB] != 0)) {
+							if (isRanged(nextA, nextB) && (visited[nextA][nextB] != -1) && (visited[nextA][nextB] != 0)) {
 								pro3_re = max_m(pro3_re, visited[nextA][nextB]);
 							}
 						}
@@ -101,6 +101,6 @@ int main() {
 		}
 	}
 	//print();
-	cout << roomNum << endl << maxSize <<endl<< pro3<< endl;
+	cout << roomNum << endl << maxSize << endl << pro3 << endl;
 	return 0;
 }

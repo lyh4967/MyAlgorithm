@@ -27,106 +27,10 @@
     <ClCompile Include="testDriver.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bfs\BFS.cpp">
-      <Filter>bfs</Filter>
-    </ClCompile>
-    <ClCompile Include="dfs\[2667]houseNumbering.cpp">
-      <Filter>dfs</Filter>
-    </ClCompile>
-    <ClCompile Include="dfs\[10451]permutation_cycle.cpp">
-      <Filter>dfs</Filter>
-    </ClCompile>
-    <ClCompile Include="dfs\DFS.cpp">
-      <Filter>dfs</Filter>
-    </ClCompile>
-    <ClCompile Include="graph\Graph.cpp">
-      <Filter>graph</Filter>
-    </ClCompile>
-    <ClCompile Include="bfs\[7576]tomato.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="samsungSW\[14503]robot_cleaner.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="samsungSW\[14891]tobni.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="samsungSW\[3190]snake.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="samsungSW\colony_incom.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="samsungSW\[14499]dice_incompl.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="dp\[1149]RGB.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="dp\[1463]make_one.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="dp\[2156]drink_winecpp.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="dp\[1520]downstairs.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="dp\[2579]upstairs.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="dp\[1932]numbering_triangle.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="dp\[1005]ACM_craft.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="incomplete\[2803]MyToy.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="incomplete\[5620]minimum_distance.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="dp\[2193]pinary_number.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="incomplete\findLine.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="dp\[1912]sequential_sum.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="greedy\[11399]ATM.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="greedy\[5585]changeNum.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="greedy\[2437]scale.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="greedy\[1543]document_search.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="test_c.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="incomplete\[9465]Sticker.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="dp\[6359]Druken_Sangbum.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="dp\[1890]Jump.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="SWExpert\1206.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="bruteforce\[1652]findSeat.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="incomplete\[2549]squareOfRubic.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="SWExpert\[4408]comeBackRoom.cpp">
@@ -136,9 +40,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="SWExpert\incomplete\GyeonWoo.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="incomplete\[2881]takeAWalk.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="SWExpert\[4615]oselloGame.cpp">
@@ -151,24 +52,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="SWExpert\incomplete\[4740]mingee.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="incomplete\[9177]mixWord.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="bfs\[1194]filledMoon.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="samsungSW\dragoncurve.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="dp\[1010]putBridge.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="dp\[1965]InputBox.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="dp\[9251]LCS.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="SWExpert\incomplete\[1859]millionDollarBaby.cpp">
@@ -189,58 +72,178 @@
     <ClCompile Include="SWExpert\incomplete\[4804]programmingOfUiseok.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="incomplete\[15938]avoidHeat.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="stringPro\[9935]BoomString.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="SWExpert\[5020]DDoongdragon.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="incomplete\[2957]BST.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="samsungSW\[15686]chickenDelivery.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="SWExpert\[4112]pyramid.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="incomplete\[12100]2048.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="stack\[9012]parenthesis.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="samsungSW\[1063]king.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="samsungSW\[1062]teaching.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="dp\[1915]largestSquare.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="sort\[2751]sort2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="incomplete\[2169]controlRobot.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="dp\[144925]buildfarm.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Algospot\BOGGLE.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bfs\[1726]robot.cpp">
+    <ClCompile Include="BOJ\[2667]houseNumbering.cpp">
+      <Filter>dfs</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[10451]permutation_cycle.cpp">
+      <Filter>dfs</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[13460]EscapeMarble2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="dfs\[13460]EscapeMarble2.cpp">
+    <ClCompile Include="BOJ\[14620]FlowerRoad.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="dfs\[14620]FlowerRoad.cpp">
+    <ClCompile Include="BOJ\DFS.cpp">
+      <Filter>dfs</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[1652]findSeat.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[1194]filledMoon.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[1726]robot.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[7576]tomato.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\BFS.cpp">
+      <Filter>bfs</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[1010]putBridge.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[1005]ACM_craft.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[1149]RGB.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[1463]make_one.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[1520]downstairs.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[1890]Jump.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[1912]sequential_sum.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[1915]largestSquare.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[1932]numbering_triangle.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[1965]InputBox.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[2156]drink_winecpp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[2193]pinary_number.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[2579]upstairs.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[6359]Druken_Sangbum.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[9251]LCS.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[144925]buildfarm.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\Graph.cpp">
+      <Filter>graph</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[1543]document_search.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[2437]scale.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[5585]changeNum.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[11399]ATM.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\incomplete\[2169]controlRobot.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\incomplete\[2549]squareOfRubic.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\incomplete\[2803]MyToy.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\incomplete\[2881]takeAWalk.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\incomplete\[2957]BST.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\incomplete\[5620]minimum_distance.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\incomplete\[9177]mixWord.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\incomplete\[9465]Sticker.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\incomplete\[12100]2048.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\incomplete\[15938]avoidHeat.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\incomplete\findLine.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\samsungSW\[1062]teaching.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\samsungSW\[1063]king.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\samsungSW\[3190]snake.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\samsungSW\[14499]dice_incompl.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\samsungSW\[14503]robot_cleaner.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\samsungSW\[14891]tobni.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\samsungSW\[15686]chickenDelivery.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\samsungSW\colony_incom.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\samsungSW\dragoncurve.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[2751]sort2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[9012]parenthesis.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[9935]BoomString.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[2234]castleWall.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -256,6 +259,6 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
-    <Text Include="bfs\[1194].txt" />
+    <Text Include="BOJ\[1194].txt" />
   </ItemGroup>
 </Project>
