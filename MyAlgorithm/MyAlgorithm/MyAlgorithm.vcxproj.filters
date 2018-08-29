@@ -246,6 +246,9 @@
     <ClCompile Include="BOJ\[2234]castleWall.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="programmers\[1st]Friends4Block.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
