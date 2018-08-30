@@ -1,4 +1,4 @@
-ï»¿#include <iostream>
+#include <iostream>
 using namespace std;
 
 int k;
@@ -11,26 +11,26 @@ bool isRanged(int a) {
 	return 0 <= a && a < 4;
 }
 void rotate(int num, int dir) {
-//	cout << "log: "<<num<<","<<dir << endl;
+	//	cout << "log: "<<num<<","<<dir << endl;
 
-	if (dir == 1) {//ì‹œê³„
+	if (dir == 1) {//½Ã°è
 		int temp = tobni[num][7];
 		for (int i = 7; i >= 1; i--)
 			tobni[num][i] = tobni[num][i - 1];
 		tobni[num][0] = temp;
 	}
-	else {//ë°˜
+	else {//¹Ý
 		int temp = tobni[num][0];
 		for (int i = 1; i <= 7; i++)
-			tobni[num][i-1] = tobni[num][i];
+			tobni[num][i - 1] = tobni[num][i];
 		tobni[num][7] = temp;
 	}
 
 }
 void check(int num, int dir) {
-	chk[num] = true;//ë³¸ì¸
+	chk[num] = true;//º»ÀÎ
 
-	int next = num+1;
+	int next = num + 1;
 	while (true) {
 		if (isRanged(next) && tobni[next][6] != tobni[next - 1][2]) {
 			chk[next] = true;
@@ -53,7 +53,7 @@ void check(int num, int dir) {
 
 
 	rotate(num, dir);
-	next = num+1;
+	next = num + 1;
 	int nextDir = dir * -1;
 	while (true) {
 
@@ -108,7 +108,7 @@ int main() {
 			}
 			gurantee *= 2;
 		}
-		cout << "#"<<test<<" "<< answer << "\n";
+		cout << "#" << test << " " << answer << "\n";
 	}
 
 	return 0;
