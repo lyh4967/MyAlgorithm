@@ -255,6 +255,12 @@
     <ClCompile Include="SWExpert\sampleTest\[4013]specificMagnet.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="SWExpert\sampleTest\[4014]BuildRunway.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[2186]StringBoard.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">

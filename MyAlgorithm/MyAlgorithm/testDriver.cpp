@@ -1,115 +1,90 @@
 ﻿#include <iostream>
+#include <string>
+#include <queue>
 using namespace std;
+int dir[4][2] = { {0,1},{1,0},{0,-1},{-1,0} };
+int n, m, k;
+int answer = 0;
+int length;
+char map[100][100];
+int visited[100][100][81];
+string str;
 
-int k;
-int tobni[4][8];
-bool chk[4];
-void watch() {
-
-}
-bool isRanged(int a) {
-	return 0 <= a && a < 4;
-}
-void rotate(int num, int dir) {
-//	cout << "log: "<<num<<","<<dir << endl;
-
-	if (dir == 1) {//시계
-		int temp = tobni[num][7];
-		for (int i = 7; i >= 1; i--)
-			tobni[num][i] = tobni[num][i - 1];
-		tobni[num][0] = temp;
-	}
-	else {//반
-		int temp = tobni[num][0];
-		for (int i = 1; i <= 7; i++)
-			tobni[num][i-1] = tobni[num][i];
-		tobni[num][7] = temp;
-	}
-
-}
-void check(int num, int dir) {
-	chk[num] = true;//본인
-
-	int next = num+1;
-	while (true) {
-		if (isRanged(next) && tobni[next][6] != tobni[next - 1][2]) {
-			chk[next] = true;
-			next++;
-		}
-		else
-			break;
-	}
-
-	next = num - 1;
-	while (true) {
-
-		if (isRanged(next) && tobni[next][2] != tobni[next + 1][6]) {
-			chk[next] = true;
-			next--;
-		}
-		else
-			break;
-	}
-
-
-	rotate(num, dir);
-	next = num+1;
-	int nextDir = dir * -1;
-	while (true) {
-
-		if (isRanged(next) && chk[next] == true) {
-			rotate(next, nextDir);
-			next++;
-			nextDir *= -1;
-		}
-		else {
-			break;
-		}
-	}
-	next = num - 1;
-	nextDir = dir * -1;
-	while (true) {
-		if (isRanged(next) && chk[next] == true) {
-			rotate(next, nextDir);
-			next--;
-			nextDir *= -1;
-		}
-		else {
-			break;
-		}
-	}
-
+bool isRanged(int a, int b) {
+	return 0 <= a && a < n && 0 <= b && b < m;
 }
 
+int dfs(int a, int b, int cnt) {
+	if (cnt == length - 1) 
+		return 1;
+
+	if (visited[a][b][cnt] != -1)
+		return visited[a][b][cnt];
+
+	visited[a][b][cnt] = 0;
+	for (int i = 0; i < 4; i++) {
+		for (int jump = 1; jump <= k; jump++) {
+			int nA = a + dir[i][0] * jump;
+			int nB = b + dir[i][1] * jump;
+
+			if (isRanged(nA, nB) && map[nA][nB] == str[cnt + 1]) {
+				visited[a][b][cnt] += dfs(nA, nB, cnt + 1);
+			}
+		}
+	}
+	return visited[a][b][cnt];
+}
+
+void bfs() {
+	//while (!que.empty()) {
+
+	//	node = que.front(); que.pop();
+	//	int a = node.a; int b = node.b; int cnt = node.cnt;
+	//	if (cnt == length - 1) {
+	//		answer++;
+	//		continue;
+	//	}
+
+	//	if (visited[a][b][cnt])
+	//		continue;
+
+	//	visited[a][b][cnt] = true;
+
+	//	for (int i = 0; i < 4; i++) {
+	//		for(int jump = 1;jump <= k; jump++){
+	//			int nA = a + dir[i][0] * jump;
+	//			int nB = b + dir[i][1] * jump;
+	//			//cout << "log: " << nA << "," << nB << "," << cnt << endl;
+
+	//			if (isRanged(nA, nB) && map[nA][nB] == str[cnt + 1] && !visited[nA][nB][cnt + 1]) {
+	//				node.a = nA; node.b = nB; node.cnt = cnt + 1;
+	//				que.push(node);
+	//			}
+	//		}
+	//	}
+	//}
+}
 int main() {
+	ios_base::sync_with_stdio(false); cin.tie(NULL);
 
-	int T; cin >> T;
-	for (int test = 1; test <= T; test++) {
-		cin >> k;
-		for (int i = 0; i < 4; i++) {
-			for (int j = 0; j < 8; j++) {
-				cin >> tobni[i][j];
+	cin >> n >> m >> k;
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			fill(visited[i][j], visited[i][j] + 81, -1);
+			cin >> map[i][j];
+		}
+	}
+	cin >> str;
+	length = str.size();
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			if (map[i][j] == str[0]) {
+				answer += dfs(i, j, 0);
 			}
 		}
-		for (int i = 0; i < k; i++) {
-			int num, dir;
-			cin >> num >> dir;
-
-			fill(chk, chk + 4, false);
-			check(num - 1, dir);
-
-
-		}
-		int answer = 0;
-		int gurantee = 1;
-		for (int i = 0; i < 4; i++) {
-			if (tobni[i][0] == 1) {
-				answer += gurantee;
-			}
-			gurantee *= 2;
-		}
-		cout << "#"<<test<<" "<< answer << "\n";
 	}
 
+	cout << answer << "\n";
 	return 0;
 }
