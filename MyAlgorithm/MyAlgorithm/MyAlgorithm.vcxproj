@@ -100,6 +100,9 @@
     <ClCompile Include="BOJ\[2234]castleWall.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="BOJ\[2422]HanYoonJung.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="BOJ\[6087]LaserCommu.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
@@ -179,6 +182,9 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="BOJ\[7682]TicTacTo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="BOJ\[9207]FegSolitare.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="BOJ\[9251]LCS.cpp">
@@ -262,59 +268,64 @@
     <ClCompile Include="programmers\[1st]Friends4Block.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="programmers\[1st]SecretMap.cpp" />
-    <ClCompile Include="SWExpert\1206.cpp">
+    <ClCompile Include="programmers\[1st]SecretMap.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWExpert\connectProcessor.cpp">
+    <ClCompile Include="SWEA\1206.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWExpert\incomplete\GyeonWoo.cpp">
+    <ClCompile Include="SWEA\connectProcessor.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWExpert\incomplete\[1244]exchangeNum.cpp">
+    <ClCompile Include="SWEA\incomplete\GyeonWoo.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWExpert\incomplete\[1859]millionDollarBaby.cpp">
+    <ClCompile Include="SWEA\incomplete\[1244]exchangeNum.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWExpert\sampleTest\[4013]specificMagnet.cpp">
+    <ClCompile Include="SWEA\incomplete\[1859]millionDollarBaby.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWExpert\sampleTest\[4014]BuildRunway.cpp">
+    <ClCompile Include="SWEA\sampleTest\[4013]specificMagnet.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWExpert\[4112]pyramid.cpp">
+    <ClCompile Include="SWEA\sampleTest\[4014]BuildRunway.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWExpert\incomplete\[4740]mingee.cpp">
+    <ClCompile Include="SWEA\[2115]takeHoneys.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWExpert\incomplete\[4804]programmingOfUiseok.cpp">
+    <ClCompile Include="SWEA\[4112]pyramid.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWExpert\[1208]Flattern.cpp">
+    <ClCompile Include="SWEA\incomplete\[4740]mingee.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWExpert\[2806]n_queens.cpp">
+    <ClCompile Include="SWEA\incomplete\[4804]programmingOfUiseok.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWExpert\[2817]sum_of_subset.cpp">
+    <ClCompile Include="SWEA\[1208]Flattern.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWExpert\[4408]comeBackRoom.cpp">
+    <ClCompile Include="SWEA\[2806]n_queens.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWExpert\[4615]oselloGame.cpp">
+    <ClCompile Include="SWEA\[2817]sum_of_subset.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWExpert\[4672]makeNoise.cpp">
+    <ClCompile Include="SWEA\[4408]comeBackRoom.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWExpert\[4751]diamond.cpp">
+    <ClCompile Include="SWEA\[4615]oselloGame.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="SWExpert\[5020]DDoongdragon.cpp">
+    <ClCompile Include="SWEA\[4672]makeNoise.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="SWEA\[4751]diamond.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="SWEA\[5020]DDoongdragon.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="testDriver.cpp" />
