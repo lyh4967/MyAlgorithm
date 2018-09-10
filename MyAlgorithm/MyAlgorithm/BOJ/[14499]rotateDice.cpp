@@ -1,10 +1,10 @@
-﻿#include <iostream>
+#include <iostream>
 using namespace std;
 
 int dice[4][3];
 int n, m, sA, sB, k;
 int map[20][20];
-int dir[5][2] = { {0,0},{0,1},{0,-1},{-1,0},{1,0} };
+int dir[5][2] = { { 0,0 },{ 0,1 },{ 0,-1 },{ -1,0 },{ 1,0 } };
 bool isRanged(int a, int b) {
 	return 0 <= a && a < n && 0 <= b && b < m;
 }
@@ -82,7 +82,7 @@ int main() {
 
 		int nextA = a + dir[dirCom][0];
 		int nextB = b + dir[dirCom][1];
-		
+
 		if (isRanged(nextA, nextB)) {
 			rotate(dirCom);
 			if (map[nextA][nextB] == 0) {
