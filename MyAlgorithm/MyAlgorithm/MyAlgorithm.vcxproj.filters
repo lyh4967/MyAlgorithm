@@ -303,6 +303,15 @@
     <ClCompile Include="programmers\kakao_1st(1809)\Q4.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="SWEA\sampleTest\[1949]TakeaMountain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWEA\sampleTest\[5644]WirelessCharge.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWEA\incomplete\[5648]AtomicSimulation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
