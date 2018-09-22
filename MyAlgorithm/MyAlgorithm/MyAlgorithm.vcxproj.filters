@@ -321,6 +321,18 @@
     <ClCompile Include="SWEA\sampleTest\[2112]SecurityFilm.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="CODE_MONSTER_2018\Q1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CODE_MONSTER_2018\Q2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CODE_MONSTER_2018\Q3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CODE_MONSTER_2018\Q4.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
