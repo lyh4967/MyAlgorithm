@@ -288,18 +288,6 @@
     <ClCompile Include="programmers\incomplete\[1st]ShuttleBus.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="programmers\kakao_1st%281809%29\Q1.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="programmers\kakao_1st%281809%29\Q2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="programmers\kakao_1st%281809%29\Q3.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="programmers\kakao_1st(1809)\Q4.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="SWEA\sampleTest\[5644]WirelessCharge.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -313,6 +301,21 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="SWEA\sampleTest\[1953]Takedeparter.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWEA\sampleTest\[2105]DessertCafe.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="kakao_1st%281809%29\Q1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="kakao_1st%281809%29\Q2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="kakao_1st%281809%29\Q3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="kakao_1st%281809%29\Q4.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
