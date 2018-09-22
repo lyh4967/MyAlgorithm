@@ -318,6 +318,9 @@
     <ClCompile Include="kakao_1st%281809%29\Q4.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="SWEA\sampleTest\[2112]SecurityFilm.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
