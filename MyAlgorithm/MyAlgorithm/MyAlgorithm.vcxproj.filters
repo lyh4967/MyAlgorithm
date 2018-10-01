@@ -339,6 +339,24 @@
     <ClCompile Include="SWEA\sampleTest\[2382]BioIsolation.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="line_1st%281809%29\Q1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="line_1st%281809%29\Q2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="nhn_1st(1809)\Q1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="nhn_1st(1809)\Q2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="nhn_1st(1809)\Q4.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWEA\incomplete\[2383]LunchTime.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -353,5 +371,7 @@
   <ItemGroup>
     <Text Include="input.txt" />
     <Text Include="BOJ\[1194].txt" />
+    <Text Include="line_1st%281809%29\Q1_input.txt" />
+    <Text Include="line_1st%281809%29\Q2.txt" />
   </ItemGroup>
 </Project>
