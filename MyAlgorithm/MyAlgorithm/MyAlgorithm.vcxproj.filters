@@ -294,9 +294,6 @@
     <ClCompile Include="SWEA\incomplete\[5648]AtomicSimulation.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="SWEA\incomplete\[1949]TakeaMountain.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="SWEA\incomplete\[4014]BuildRunway.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -385,6 +382,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="SWEA\sampleTest\[5658]TreasureBox.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SWEA\sampleTest\[1949]TakeaMountain.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
