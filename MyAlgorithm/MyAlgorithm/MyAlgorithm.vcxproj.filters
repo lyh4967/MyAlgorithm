@@ -27,9 +27,6 @@
     <ClCompile Include="testDriver.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="test_c.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Algospot\BOGGLE.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -385,6 +382,15 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="SWEA\sampleTest\[1949]TakeaMountain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="testDri.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[10283]Stack.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BOJ\[10845]Queue.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
