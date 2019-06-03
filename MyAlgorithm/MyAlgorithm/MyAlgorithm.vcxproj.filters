@@ -384,9 +384,6 @@
     <ClCompile Include="SWEA\sampleTest\[1949]TakeaMountain.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="testDri.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="BOJ\[10283]Stack.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
